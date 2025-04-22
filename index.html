@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>mr.patil-online-shop</title>
+</head>
+
+<body style="background-color:gainsboro;">
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+
+    <nav id="navbar-example2" class="navbar navbar-expand-lg navbar-dark"
+        style="position: sticky;top:0;z-index: 999;background-color: rgba(34, 182, 15, 0.925);">
+        <a class="navbar-brand" href="#">
+            <img src="images/mrlogo.png" width="95" height="40" class="d-inline-block align-top" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#products">Products</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Login/sign up
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="register.html">New Customer?<span
+                                class="badge badge-pill badge-primary">sign
+                                up</span></a>
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="#">Review</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">MR.PATIL PRIME</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        More
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zm.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z" />
+                            </svg>Notifications</a>
+                        <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                <path
+                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                <path
+                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                            </svg>Download App</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                fill="currentColor" class="bi bi-question-square-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z" />
+                            </svg>24x7 Customer support</a>
+                    </div>
+                </li>
+            </ul>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart-fill"
+                viewBox="0 0 16 16" style="color: white;margin-right: 20px;position:relative">
+                <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+            </svg>
+            <form class="form-inline my-2 my-lg-0">
+                <input style="padding-right: 200px;position: relative;" class="form-control mr-sm-2" type="search"
+                    placeholder="Search Groccery" aria-label="Search">
+                <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <!-- As a heading -->
+    <nav class="navbar navbar-light" style="background-color: white;">
+        <div class="row">
+            <div class="col-md-2" style="padding-left: 80px;" data-container="body" data-toggle="popover"
+                data-placement="bottom" data-content="Bottom popover">
+                <a href="#">
+                    <img src="images/p1.webp">
+                </a>
+
+                <div class="btn-group mt-2 ml-3">
+                    <span href="#" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Staples
+                    </span>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Dals & Pulses</a>
+                        <a class="dropdown-item" href="#">Ghee & Oil</a>
+                        <a class="dropdown-item" href="#">Atta & Flours</a>
+                        <a class="dropdown-item" href="#">Masalas & Spices</a>
+                        <a class="dropdown-item" href="#">Rice & Rice products</a>
+                        <a class="dropdown-item" href="#">Dry Fruits,Nuts & Seeds</a>
+                        <a class="dropdown-item" href="#">Sugar,Jaggery & Salts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding-left: 80px;">
+                <a href="#">
+                    <img src="images/p2.webp">
+                </a>
+                <div class="btn-group mt-2">
+                    <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Snacks & Beverages
+                    </span>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Biscuits</a>
+                        <a class="dropdown-item" href="#">Cheeps,Namkeen & Snacks</a>
+                        <a class="dropdown-item" href="#">Tea</a>
+                        <a class="dropdown-item" href="#">Coffee</a>
+                        <a class="dropdown-item" href="#">Juices</a>
+                        <a class="dropdown-item" href="#">Health Drinks Mix</a>
+                        <a class="dropdown-item" href="#">Soft Drinks</a>
+                        <a class="dropdown-item" href="#">Water</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding-left: 80px;">
+                <a href="#">
+                    <img src="images/p3.webp">
+                </a>
+                <div class="btn-group mt-2 ml-3">
+                    <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Packaged Food
+                    </span>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Breakfast Cereals</a>
+                        <a class="dropdown-item" href="#">Noodles & Pasta</a>
+                        <a class="dropdown-item" href="#">Ketchups & Spreads</a>
+                        <a class="dropdown-item" href="#">Chocolates & Sweets</a>
+                        <a class="dropdown-item" href="#">Jams & Honey</a>
+                        <a class="dropdown-item" href="#">Pickle & Chutney</a>
+                        <a class="dropdown-item" href="#">Ready to Cook</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding-left: 80px;">
+                <a href="#">
+                    <img src="images/p4.webp">
+                </a>
+                <div class="btn-group mt-2">
+                    <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Personal & Baby Care
+                    </span>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Soaps & Body wash</a>
+                        <a class="dropdown-item" href="#">Hair Care</a>
+                        <a class="dropdown-item" href="#">Oral Care</a>
+                        <a class="dropdown-item" href="#">Deos,Perfumes & Talc</a>
+                        <a class="dropdown-item" href="#">Creams,Lotions & Skin care</a>
+                        <a class="dropdown-item" href="#">Kajal & Makeup</a>
+                        <a class="dropdown-item" href="#">Sanitary needs</a>
+                        <a class="dropdown-item" href="#">Saving needs</a>
+                        <a class="dropdown-item" href="#">Baby Bath & Skin Care</a>
+                        <a class="dropdown-item" href="#">Baby Food</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding-left: 80px;">
+                <a href="#">
+                    <img src="images/p5.webp">
+                </a>
+                <div class="btn-group mt-2">
+                    <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Household Care
+                    </span>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Detergents & Loundry</a>
+                        <a class="dropdown-item" href="#">Utensil Cleaners</a>
+                        <a class="dropdown-item" href="#">Floor & Other Cleaner</a>
+                        <a class="dropdown-item" href="#">Freshners</a>
+                        <a class="dropdown-item" href="#">Paper & Disposables</a>
+                        <a class="dropdown-item" href="#">Pooja needs</a>
+                        <a class="dropdown-item" href="#">Shoe Care</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2" style="padding-left: 80px;">
+                <a href="#">
+                    <img src="images/p6.webp">
+                </a>
+                <div class="btn-group mt-2 ml-3">
+                    <span class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dairy & Eggs
+                    </span>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Dairy</a>
+                        <a class="dropdown-item" href="#">Eggs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="m-4">
+        <p style="display: contents;color: gray;font-size: smaller;">Whether you work from home or office or other
+            workplaces, daily grocery items are a requisite for everybody. Regardless of the size of the family or where
+            you live, one can easily browse for the required food or other daily use products and have them brought to
+            your home. Explore the variety of products, whether oils or foodgrains, from the online stock and choose the
+            quantity required. You can save the time otherwise lost in waiting in lengthy queues for billing and
+            payments by easily adding the chosen items to your cart online. Select the required date for delivery and
+            pay with a suitable payment option. This will help you receive the items whenever you need them and in the
+            available quantity. Essentials needed every day, like spices, daals, sugar, coffee powder, salt, etc., can
+            be easily shopped online and delivered to your home. Other items like cleaning liquids, shower gels, fabric
+            softeners, toothpaste, etc., can also be bought online. Buy grocery and more from brands such as Kellogg’s,
+            Tata Gold, Parle G, Lays, etc. Order the online grocery comfortably from home for timely doorstep delivery.
+            You may also place an order for the comfort and convenience of your loved ones who cannot move out of the
+            house and shop. The information you are reading has been last updated on 06-Feb-23.</p>
+    </div>
+    <section class="pt-4 pb-4 pr-4 pl-4 m-2" style="background-color:rgba(34, 182, 15, 0.925);">
+        <div>
+            <div class="row">
+                <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Today's Offer</p>
+                            <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                                style="width: 35px; height: 35px;">
+                                <p class="text-white mb-0 small">1Kg</p>
+                            </div>
+                        </div>
+                        <a href="offer1.html"><img src="images/md1.webp" class="ml-4" alt="" width="30%" height="100" /></a>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small"><a href="#!" class="text-muted">Madhur</a></p>
+                                <p class="small text-danger"><s>Rs.40</s></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Pure and Hygienic Sugar</h5>
+                                <h5 class="text-dark mb-0">Rs.10</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Today's Offer</p>
+                            <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                                style="width: 35px; height: 35px;">
+                                <p class="text-white mb-0 small">15g</p>
+                            </div>
+                        </div>
+                        <img src="images/dryfruit.webp" class="ml-4" alt="" width="30%" height="100" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small"><a href="#!" class="text-muted">Happilo</a></p>
+                                <p class="small text-danger"><s>Rs.28</s></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Mini Dry Fruit Bar Pouch</h5>
+                                <h5 class="text-dark mb-0">Rs.15</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Today's Offer</p>
+                            <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                                style="width: 35px; height: 35px;">
+                                <p class="text-white mb-0 small">50g</p>
+                            </div>
+                        </div>
+                        <img src="images/kishmis.webp" class="ml-4" alt="" width="30%" height="100" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small"><a href="#!" class="text-muted">Madhuban</a></p>
+                                <p class="small text-danger"><s>Rs.50</s></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Premium Seedless Raisins</h5>
+                                <h5 class="text-dark mb-0">Rs.34</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-3 mb-4 mb-lg-0">
+                    <div class="card">
+                        <div class="d-flex justify-content-between p-3">
+                            <p class="lead mb-0">Today's Offer</p>
+                            <div class="bg-info rounded-circle d-flex align-items-center justify-content-center shadow-1-strong"
+                                style="width: 35px; height: 35px;">
+                                <p class="text-white mb-0 small">1Kg</p>
+                            </div>
+                        </div>
+                        <img src="images/md1.webp" class="ml-4" alt="" width="30%" height="100" />
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <p class="small"><a href="#!" class="text-muted">Madhur</a></p>
+                                <p class="small text-danger"><s>Rs.40</s></p>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-3">
+                                <h5 class="mb-0">Pure and Hygienic Sugar</h5>
+                                <h5 class="text-dark mb-0">Rs.10</h5>
+                            </div>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <p class="text-muted mb-0">Available: <span class="fw-bold">6</span></p>
+                                <div class="ms-auto text-warning">
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="p-4 m-2" style="background-color: white;">
+        <div class="mb-4">
+            <h4>Featured Brands</h4>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card" style="width: 19rem;">
+                    <a><img src="images/saffola.jpg" height="150px" width="303px" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-text">upto 40% off</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 19rem;">
+                <a><img src="images/snacks.webp" height="150px" width="303px" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-text">Min 30% off</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 19rem;">
+                <a><img src="images/Nuts_Web.webp" height="150px" width="303px" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-text">upto 50% off</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card" style="width: 19rem;">
+                <a><img src="images/lizol.webp" height="150px" width="303px" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-text">upto 40% off</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="m-2">
+            <img src="images/Aashirvaad-banner.jpg" width="100%">
+    </div>
+    <div style="background-color: black;">
+        <div class="row" style="margin-right:0%">
+            <div class="col-md-3 ml-5">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo_transparent.png" width="250" height="250" class="d-inline-block align-top"
+                        alt="">
+                </a>
+            </div>
+            <div class="col-md-3 mt-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: rgba(237, 228, 220, 0.852);">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(237, 228, 220, 0.852);">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(237, 228, 220, 0.852);">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(237, 228, 220, 0.852);">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(237, 228, 220, 0.852);">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3 mt-4">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="color: rgba(237, 228, 220, 0.852);">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(237, 228, 220, 0.852);">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(237, 228, 220, 0.852);">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: rgba(237, 228, 220, 0.852);">Terms & Conditions</a>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: inline-flex;" class="mt-4 ml-3">
+                <a class="nav-link" href="#"><i class="fa fa-linkedin-square" style="font-size:24px;"></i></a>
+                <a class="nav-link" href="#"><i class="fa fa-instagram" style="font-size:24px;"></i></a>
+                <a class="nav-link" href="#"><i class="fa fa-twitter-square" style="font-size:24px;"></i></a>
+                <a class="nav-link" href="#"><i class="fa fa-facebook-square" style="font-size:24px;"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

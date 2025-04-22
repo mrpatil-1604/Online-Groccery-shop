@@ -1,0 +1,8 @@
+.mr-1-i{
+    transform: rotate(270deg);
+    transition: transform .1s,-webkit-transform .1s;
+    margin: 7px 0 0 8px;
+}
+.mr-1-ii{
+    fill: #000;
+}
